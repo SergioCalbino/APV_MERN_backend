@@ -25,7 +25,9 @@ const corsOptions = {
     }
 }
 
-app.use(cors(corsOptions))
+app.use(cors({
+    origin: '*'
+}));
 
 app.use('/api/veterinarios', veterinarioRoutes); // De esta forma accedo al router de veterinarios. app.tmb es una tura
 app.use('/api/pacientes', pacienteRoutes); // De esta forma accedo al router de veterinarios. app.tmb es una tura
