@@ -12,7 +12,8 @@ app.use(express.json()); // Para que express lea los json
 
 conectarDB();
 
-const dominiosPertmitidos = [process.env.FRONTEND_URL]
+// const dominiosPertmitidos = [process.env.FRONTEND_URL]
+const dominiosPertmitidos = ['https://veterinarios-mern.vercel.app']
 
 const corsOptions = {
     origin: function(origin, callback) {
